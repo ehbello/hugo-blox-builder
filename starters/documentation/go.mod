@@ -1,4 +1,4 @@
-module github.com/HugoBlox/theme-documentation
+module github.com/ehbello/theme-documentation
 
 go 1.15
 
