@@ -29,8 +29,8 @@
   {{ range $skills }}
   {{ $color := .color | default "" }}
   {{ $color_border := .color_border | default "" }}
-  <div>
-    <div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">
+  <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
+    <div class="mb-3 text-xl font-bold text-gray-900 dark:text-white h-16">
       {{ .name | markdownify | emojify }}
       {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
     </div>
@@ -41,7 +41,7 @@
     {{ $pack_prefix = "fa" }}
     {{ end }}
 
-    <div class="skills-content">
+    <div class="skills-content mb-3">
 
       {{ with .icon }}
       <span class="skills-icon inline-block">
