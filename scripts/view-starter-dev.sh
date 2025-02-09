@@ -18,13 +18,13 @@ cd "starters/$1"
 export WC_DEMO=true \
 export HUGO_ENVIRONMENT=development \
 export HUGOxPARAMSxDECAP_CMSxLOCAL_BACKEND=true \
-export HUGO_MODULE_REPLACEMENTS="github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 -> ../../../modules/blox-bootstrap,
-github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify -> ../../../modules/blox-plugin-netlify,
-github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal -> ../../../modules/blox-plugin-reveal,
-github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind -> ../../../modules/blox-tailwind,
-github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms -> ../../../modules/blox-plugin-decap-cms,
-github.com/HugoBlox/hugo-blox-builder/modules/blox-core -> ../../../modules/blox-core,
-github.com/HugoBlox/hugo-blox-builder/modules/blox-seo -> ../../../modules/blox-seo" \
+export HUGO_MODULE_REPLACEMENTS="github.com/ehbello/hugo-blox-builder/modules/blox-bootstrap/v5 -> ../../../modules/blox-bootstrap,
+github.com/ehbello/hugo-blox-builder/modules/blox-plugin-netlify -> ../../../modules/blox-plugin-netlify,
+github.com/ehbello/hugo-blox-builder/modules/blox-plugin-reveal -> ../../../modules/blox-plugin-reveal,
+github.com/ehbello/hugo-blox-builder/modules/blox-tailwind -> ../../../modules/blox-tailwind,
+github.com/ehbello/hugo-blox-builder/modules/blox-plugin-decap-cms -> ../../../modules/blox-plugin-decap-cms,
+github.com/ehbello/hugo-blox-builder/modules/blox-core -> ../../../modules/blox-core,
+github.com/ehbello/hugo-blox-builder/modules/blox-seo -> ../../../modules/blox-seo" \
 hugo && \
 npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind && \
 hugo server --panicOnWarning --renderStaticToDisk -F --port 8081 --bind 0.0.0.0
