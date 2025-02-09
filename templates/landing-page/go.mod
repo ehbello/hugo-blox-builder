@@ -1,4 +1,4 @@
-module github.com/HugoBlox/theme-landing-page
+module github.com/ehbello/theme-landing-page
 
 go 1.19
 
